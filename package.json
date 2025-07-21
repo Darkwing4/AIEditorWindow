@@ -1,0 +1,30 @@
+﻿{
+  "name": "com.darkwing4.ai-editor-window",
+  "version": "0.1.0",
+  "displayName": "AI Editor Window",
+  "description": "Base EditorWindow class that brings LLM-powered code generation, refactoring and Git helpers to the Unity Editor.",
+  "unity": "2021.3",
+  "author": {
+    "name": "Darkwing4",
+    "url": "https://github.com/Darkwing4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Darkwing4/AIEditorWindow.git"
+  },
+  "keywords": [
+    "AI",
+    "LLM",
+    "ChatGPT",
+    "Anthropic",
+    "DeepSeek",
+    "EditorWindow",
+    "Unity"
+  ],
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  },
+  "licensesUrl": "https://github.com/Darkwing4/AIEditorWindow/blob/main/LICENSE",
+  "documentationUrl": "https://github.com/Darkwing4/AIEditorWindow#readme",
+  "changelogUrl": "https://github.com/Darkwing4/AIEditorWindow/blob/main/CHANGELOG.md"
+}
