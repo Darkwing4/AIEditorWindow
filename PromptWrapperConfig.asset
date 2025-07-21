@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5068122f7d46448377d84528e62b47, type: 3}
+  m_Name: PromptWrapperConfig
+  m_EditorClassIdentifier: 
+  systemWithoutCode: 'Write a Unity C# EditorWindow named "{scriptName}".
+
+    -
+    I need ready to compile EditorWindow script.
+
+    - Do not add any explanations.
+
+    -
+    Do not use markdown in response.
+
+    - Inheritor MUST call base.OnGUI.
+
+    -
+    Inheritor MUST HAVE public override void OnGUI() with base.OnGUI()!!!
+
+    -
+    Inheritor MUST be inside namespace AIEditorWindowTool.Core
+
+    - Inheritor MUST
+    inherit from AIEditorWindow.
+
+    - Inheritor MUST call base.OnEnable if need
+    override it.
+
+    - Inheritor MUST call base.OnDisable if need override it.
+
+    -
+    Do not define AIEditorWindow, it is already defined.
+
+    - Must place ShowWindow
+    method in [MenuItem("GPTGenerated/" + nameof({scriptName}))]
+
+'
+  userWithoutCode: 'It must do the following: {prompt}'
+  systemWithCode: 'Write a Unity C# EditorWindow named "{scriptName}".
+
+    - I need
+    ready to compile EditorWindow script.
+
+    - Do not add any explanations.
+
+    -
+    Do not use markdown in response.
+
+    - Inheritor MUST call base.OnGUI.
+
+    -
+    Inheritor MUST be inside namespace AIEditorWindowTool.Core
+
+    - Inheritor MUST
+    inherit from AIEditorWindow.
+
+    - Inheritor MUST call base.OnEnable if need
+    override it.
+
+    - Inheritor MUST call base.OnDisable if need override it.
+
+    -
+    Do not define AIEditorWindow, it is already defined.
+
+    - Must place ShowWindow
+    method in [MenuItem("GPTGenerated/" + nameof({scriptName}))]
+
+'
+  userWithCode: 'Consider this existing code:
+
+    {currentCode}
+
+    It must do
+    the following:
+
+    {prompt}'

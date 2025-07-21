@@ -1,0 +1,43 @@
+### Goal  
+Create an `AIEditorWindowCreator` window that streamlines the generation and management of `AIEditorWindow` subclasses.
+
+### UI  
+1. Place all content inside a single `ScrollView` that expands to the full height/width of the window.  
+
+2. Top panel:  
+   * **Developer settings** toggle (`IamDeveloper`).  
+     * When unchecked, force `showGPTPanel = false`.  
+   * `TextField` — enter the new file name (`fileName`).  
+   * **“Create File”** button:  
+     * Generates `<fileName>.cs` in the same folder as the creator script.  
+     * Creates an empty `<fileName>.cs.prompt`.  
+     * Inserts the template:  
+
+       ```csharp
+       namespace AITools.AIEditorWindowTool {
+         using UnityEditor;
+         using UnityEngine;
+         public class %FILE_NAME% : AIEditorWindow {
+
+           [MenuItem("GPTGenerated/" + nameof(%FILE_NAME%))]
+           public static void ShowWindow() {
+             GetWindow<%FILE_NAME%>(nameof(%FILE_NAME%));
+           }
+         }
+       }
+       ```
+
+### List of `AIEditorWindow` subclasses  
+3. On **“Refresh subclass list”** click, run reflection (only on demand): collect all classes inheriting from `AIEditorWindow` except the creator itself and display them in the same `ScrollView`. For each item:  
+   * `TextField` with the class name. Editing it:  
+     * Renames the class inside the file.  
+     * Renames the `.cs` file and its paired `.cs.prompt`.  
+   * **Open** button — opens the selected window.  
+   * **copy** button — creates a duplicate file/class with the `Copy` suffix.  
+   * Trash-can icon — deletes both files after a `DisplayDialog` confirmation.  
+
+4. Refresh the list manually after any operation.  
+
+### General requirements  
+* Scan for subclasses only when the button is pressed — no continuous updates.  
+* Log errors (empty name, missing path, etc.) via `Debug.LogError`.
