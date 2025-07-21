@@ -21,6 +21,7 @@
    ```
    https://github.com/Darkwing4/AIEditorWindow.git
    ```
+4. After the package is installed, go to **Edit ▸ Project Settings ▸ AI Tools** and enter the API key(s) for the provider(s) you plan to use (OpenAI, Anthropic, …).
 
 ### Requirements
 - Unity **2021.3** or newer
