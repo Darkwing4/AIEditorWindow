@@ -1,0 +1,13 @@
+Find all textures in the project and display them in lists grouped by texture compression type.
+- Each list should be collapsible.
+- Optimize for large lists (e.g., implement virtualization/scrolling) so the editor doesn’t lag while browsing all textures.
+- Exclude textures located in any “*/Editor/*” folders.
+- Under each texture, show its import settings and their values.
+- Texture settings should be editable.
+- Add a label above the lists explaining how textures are grouped.
+
+In addition to grouping by compression, create an equivalent list grouped by texture type (e.g., sprite, lightmap, etc.).
+- Add a label before each list explaining the grouping principle.
+
+To add:
+- Similarly group textures by their size.

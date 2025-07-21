@@ -1,0 +1,9 @@
+Find all Texture2D assets in the project and display them as a table using IMGUI TreeView.
+
+- The table should have read-only columns:
+  - Texture name
+  - Texture path in the Assets folder
+  - Texture size
+  - Texture compression
+  
+- The table must support sorting by each column!

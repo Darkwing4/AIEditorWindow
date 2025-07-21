@@ -1,0 +1,7 @@
+SceneMaterialViewer displays a list of all materials used in the currently open scene.
+
+- public override void OnGUI():
+- For each material, display its Material object as an ObjectField.
+- Under each material, show a collapsible list of scene objects that use this material.
+- For each material, display the name and path of its shader.
+- Provide a button to refresh the list of materials and the objects using them.

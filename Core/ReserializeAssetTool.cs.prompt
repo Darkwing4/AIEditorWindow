@@ -1,0 +1,23 @@
+- For all selected assets, call SetDirty  
+- Example:
+
+using UnityEditor;
+using UnityEngine;
+
+public static class MyAssetTools
+{
+    [MenuItem("Tools/Force Save MyScriptableObject")]
+    public static void ForceSaveMyScriptableObject()
+    {
+        // Load target ScriptableObject
+        var so = AssetDatabase.LoadAssetAtPath<ScriptableObject>("Assets/MyScriptableObject.asset");
+
+        // Mark object as dirty
+        EditorUtility.SetDirty(so);
+
+        // Save all dirty objects
+        AssetDatabase.SaveAssets();
+
+        Debug.Log("ScriptableObject re-saved!");
+    }
+}

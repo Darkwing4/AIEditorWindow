@@ -1,0 +1,7 @@
+What this window already does:
+- Allows drag-and-drop of C# scripts or MonoScript assets and shows them as a list.
+- Saves and restores the script list via EditorPrefs.
+- Provides a “CopyToBuffer” button to copy the contents of all selected files to the clipboard.
+- Includes a “ResetSelected” button to clear the entire list of selected scripts.
+- There should be a “CopyName” button next to the Remove button.
+- Use ContextScriptsToolbar; do not re-implement what’s already in it.

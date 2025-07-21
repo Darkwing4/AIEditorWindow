@@ -1,0 +1,13 @@
+BookmarkableHistory is a tool that shows the editor’s selection history.
+
+Finished features:
+- Ability to pin objects
+- Filters by object type
+- Re-ordering of pinned objects
+- “Load” button for prefabs and scenes
+- Copy-Paste support for sharing the window’s state
+- Drag-and-drop for pinned objects
+
+To add:
+- An icon on pinned items so it’s clear they can be dragged
+- Disable dragging for un-pinned items

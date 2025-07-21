@@ -1,0 +1,5 @@
+Need to take the hierarchy of the selected object and enumerate all GameObjects and their components.
+
+- A “ToJson” button.
+- JSON is copied to the clipboard.
+- Starting from the root, traverse down; in the JSON include each GameObject’s name, its components (short type names), and its children.

@@ -1,0 +1,20 @@
+The editor window should roughly replicate the following PowerShell script:
+
+$thresholdMB = 100
+$thresholdBytes = $thresholdMB * 1MB
+Get-ChildItem -Path "." -Recurse -File | Where-Object {
+    $_.Length -gt $thresholdBytes
+} | Sort-Object Length -Descending | ForEach-Object {
+    [PSCustomObject]@{
+        SizeMB = "{0:N2}" -f ($_.Length / 1MB)
+        Path   = $_.FullName
+    }
+} | Format-Table -AutoSize
+
+- Implement everything inside a Unity project.
+- Add a field for the file-size threshold, default 100 MB.
+- Display a list of all files; the list must be collapsible.
+- Show the full paths of files/prefabs in the list.
+- Search only within the Assets folder.
+- Items in the list must be clickable; clicking an item should highlight the file in the Project window.
+- Group files by extension, each group collapsible.

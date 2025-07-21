@@ -1,0 +1,8 @@
+Display a tree view of all files and subfolders starting from a folder selected by drag-and-drop from the Project window. The EditorWindow should have:
+- A drop area labeled “Drag folder here” where the user can drag a folder asset.
+- On folder drop, recursively enumerate all files and subdirectories under that folder using AssetDatabase.
+- Show the hierarchy in a nested, expandable tree (use EditorGUILayout.Foldout).
+- Clicking on any file or folder in the tree should ping and select that asset in the Project window (EditorGUIUtility.PingObject and Selection.activeObject).
+- A button labeled “Copy Hierarchy” that, when clicked, serializes the current tree structure into a plain-text list and sets it to the system clipboard (EditorGUIUtility.systemCopyBuffer).
+- Remember the last dropped folder and auto-reload its hierarchy when the window is reopened.
+- Handle large hierarchies efficiently (e.g. lazy‐load child nodes on expand).
