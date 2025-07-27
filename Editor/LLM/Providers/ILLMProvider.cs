@@ -1,23 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿namespace AIEditorWindowTool.Editor.LLM.Providers {
 
-namespace AIEditorWindowTool.LLM {
+  using System;
+  using System.Collections.Generic;
+  using System.Threading.Tasks;
 
   public interface ILLMProvider {
     string Name { get; }
     IEnumerable<string> GetModels();
     Task<string> RequestAsync(List<LLMMessage> messages, string model);
-  }
-
-  public struct LLMMessage {
-    public string role;
-    public string content;
-
-    public LLMMessage(string r, string c) {
-      role = r;
-      content = c;
-    }
   }
 
   public static class LLMRegistry {

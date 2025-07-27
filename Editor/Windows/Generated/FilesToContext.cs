@@ -1,9 +1,10 @@
-using System.Collections.Generic;
-using AIEditorWindowTool.Core.Extensions;
-using UnityEditor;
-using UnityEngine;
+namespace AIEditorWindowTool.Windows {
 
-namespace AIEditorWindowTool.Core {
+  using System.Collections.Generic;
+  using AIEditorWindowTool.Editor.Extensions;
+  using UnityEditor;
+  using UnityEngine;
+
   public class FilesToContext : AIEditorWindow {
     const string PREFS_KEY = "AITools.AIEditorWindowTool.FilesToContext.SelectedScripts";
     List<ContextWrapper> contexts;

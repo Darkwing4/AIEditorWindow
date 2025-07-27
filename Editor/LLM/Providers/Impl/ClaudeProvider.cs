@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
-using UnityEngine;
+﻿namespace AIEditorWindowTool.Editor.LLM.Providers.Impl {
 
-namespace AIEditorWindowTool.LLM {
+  using System;
+  using System.Collections.Generic;
+  using System.Net.Http;
+  using System.Text;
+  using System.Threading.Tasks;
+  using Settings;
+  using Newtonsoft.Json;
+  using UnityEngine;
 
   public sealed class ClaudeProvider : ILLMProvider {
     const string URL = "https://api.anthropic.com/v1/messages";

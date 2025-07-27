@@ -1,14 +1,14 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using AIEditorWindowTool.Core.Extensions;
-using AIEditorWindowTool.LLM;
-using UnityEditor;
-using UnityEngine;
-
-namespace AIEditorWindowTool.Core {
+﻿namespace AIEditorWindowTool.Windows {
 
   using Debug = UnityEngine.Debug;
+  using System;
+  using System.IO;
+  using System.Linq;
+  using Editor.Extensions;
+  using Editor.LLM.Providers;
+  using Editor.Settings;
+  using UnityEditor;
+  using UnityEngine;
 
   public abstract class AIEditorWindow : EditorWindow {
     const double PROMPT_AUTO_SAVE_INTERVAL = 2.5;
@@ -142,7 +142,7 @@ namespace AIEditorWindowTool.Core {
         GenerateWithCurrentCode(provider, models[modelIndex]);
       }
 
-      if (GUILayout.Button("Save prompt")) { 
+      if (GUILayout.Button("Save prompt")) {
         promptField.Save();
       }
 

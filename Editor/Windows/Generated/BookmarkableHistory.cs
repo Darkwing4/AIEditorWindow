@@ -1,10 +1,11 @@
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEditor.AnimatedValues;
-using UnityEditor.SceneManagement;
-using UnityEngine;
+namespace AIEditorWindowTool.Windows {
 
-namespace AIEditorWindowTool.Core {
+  using System.Collections.Generic;
+  using UnityEditor;
+  using UnityEditor.AnimatedValues;
+  using UnityEditor.SceneManagement;
+  using UnityEngine;
+
   public class BookmarkableHistory : AIEditorWindow {
     const string EditorPrefsKeyPath = "BookmarkablePinnedAssetPath";
     const string EditorPrefsKeyPinnedCount = "BookmarkablePinnedAssetCount";

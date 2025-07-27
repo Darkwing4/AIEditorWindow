@@ -1,21 +1,21 @@
 ﻿// ReSharper disable EnforceIfStatementBraces
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using UnityEditor;
-using UnityEditorInternal;
-using UnityEngine;
+namespace AIEditorWindowTool.Editor.Extensions {
 
-namespace AIEditorWindowTool.Core.Extensions {
-
+  using System.Collections.Generic;
+  using System.IO;
+  using System.Linq;
+  using System.Text;
+  using UnityEditor;
+  using UnityEditorInternal;
+  using UnityEngine;
   using static UnityEditor.EditorGUIUtility;
 
   [System.Serializable]
   public class ContextScriptsToolbar {
     public int Count => contextScripts.Count;
 
-    [SerializeField] List<MonoScript> contextScripts = new();
+    [SerializeField]
+    List<MonoScript> contextScripts = new();
 
     Vector2 scrollPos;
     bool contextFilesFoldout;

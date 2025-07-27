@@ -1,10 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using UnityEditor;
-using UnityEngine;
+namespace AIEditorWindowTool.Windows {
 
-namespace AIEditorWindowTool.Core {
+  using System;
+  using System.Collections.Generic;
+  using System.IO;
+  using UnityEditor;
+  using UnityEngine;
 
   public class AIEditorWindowCreator : AIEditorWindow {
     Dictionary<Type, string> renameDictionary = new();
@@ -74,7 +74,7 @@ namespace AIEditorWindowTool.Core {
       }
 
       string scriptContent =
-@"namespace AIEditorWindowTool.Core {
+              @"namespace AIEditorWindowTool.Windows {
   using UnityEditor;
   using UnityEngine;
   public class " + name + @" : AIEditorWindow {

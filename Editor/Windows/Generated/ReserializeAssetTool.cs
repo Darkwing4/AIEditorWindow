@@ -1,7 +1,8 @@
-using UnityEditor;
-using UnityEngine;
+namespace AIEditorWindowTool.Windows {
 
-namespace AIEditorWindowTool.Core {
+  using UnityEditor;
+  using UnityEngine;
+
   public class ReserializeAssetTool : AIEditorWindow {
     [MenuItem("GPTGenerated/" + nameof(ReserializeAssetTool))]
     public static void ShowWindow() {

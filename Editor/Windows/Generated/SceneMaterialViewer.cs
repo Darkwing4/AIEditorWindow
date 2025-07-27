@@ -1,9 +1,10 @@
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEditor.SceneManagement;
-using UnityEngine;
+namespace AIEditorWindowTool.Windows {
 
-namespace AIEditorWindowTool.Core {
+  using System.Collections.Generic;
+  using UnityEditor;
+  using UnityEditor.SceneManagement;
+  using UnityEngine;
+
   public class SceneMaterialViewer : AIEditorWindow {
     Vector2 scrollPos;
     Dictionary<Material, List<GameObject>> materialUsage = new Dictionary<Material, List<GameObject>>();

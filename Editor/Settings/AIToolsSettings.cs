@@ -1,9 +1,8 @@
-using UnityEditor;
+namespace AIEditorWindowTool.Editor.Settings {
 
-namespace AIEditorWindowTool {
+  using UnityEditor;
 
-  [FilePath("UserSettings/" + nameof(AIToolsSettings) + ".asset",
-          FilePathAttribute.Location.ProjectFolder)]
+  [FilePath("UserSettings/" + nameof(AIToolsSettings) + ".asset", FilePathAttribute.Location.ProjectFolder)]
   public sealed class AIToolsSettings : ScriptableSingleton<AIToolsSettings> {
 
     public string openAIAPIKey;

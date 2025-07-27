@@ -1,10 +1,9 @@
-﻿using System;
-using System.Threading;
-using UnityEditor;
-using UnityEngine;
+﻿namespace AIEditorWindowTool.Editor.Extensions {
 
-namespace AIEditorWindowTool.Core.Extensions {
-
+  using System;
+  using System.Threading;
+  using UnityEditor;
+  using UnityEngine;
   using static GitAsyncHelper;
 
   public class GitFilesToolbar {

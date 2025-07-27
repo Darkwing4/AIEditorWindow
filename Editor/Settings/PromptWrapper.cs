@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using AIEditorWindowTool.LLM;
-using UnityEditor;
-using UnityEngine;
+﻿namespace AIEditorWindowTool.Editor.Settings {
 
-namespace AIEditorWindowTool {
+  using System.Collections.Generic;
+  using LLM;
+  using UnityEditor;
+  using UnityEngine;
 
   static class PromptWrapper {
     static PromptWrapperConfig cfg;

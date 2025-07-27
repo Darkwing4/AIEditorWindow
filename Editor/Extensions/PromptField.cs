@@ -1,10 +1,11 @@
-﻿using System;
-using System.IO;
-using UnityEditor;
-using UnityEngine;
+﻿namespace AIEditorWindowTool.Editor.Extensions {
 
-namespace AIEditorWindowTool.Core.Extensions {
   using Object = UnityEngine.Object;
+  using System;
+  using System.IO;
+  using UnityEditor;
+  using UnityEngine;
+
   /// <summary>
   /// TextArea for editing the LLM prompt inside EditorWindow.
   /// /// </summary>

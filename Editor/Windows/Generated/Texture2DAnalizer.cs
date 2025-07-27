@@ -1,10 +1,11 @@
-using System.Collections.Generic;
-using System.Linq;
-using UnityEditor;
-using UnityEditor.IMGUI.Controls;
-using UnityEngine;
+namespace AIEditorWindowTool.Windows {
 
-namespace AIEditorWindowTool.Core {
+  using System.Collections.Generic;
+  using System.Linq;
+  using UnityEditor;
+  using UnityEditor.IMGUI.Controls;
+  using UnityEngine;
+
   public class Texture2DAnalizer : AIEditorWindow {
     Texture2DTreeView treeView;
     TreeViewState treeViewState;

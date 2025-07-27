@@ -1,10 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-using UnityEditor;
-using UnityEngine;
+namespace AIEditorWindowTool.Windows {
 
-namespace AIEditorWindowTool.Core {
+  using System;
+  using System.Collections.Generic;
+  using System.Text;
+  using UnityEditor;
+  using UnityEngine;
+
   public class HierarchyToJson : AIEditorWindow {
     [MenuItem("GPTGenerated/" + nameof(HierarchyToJson))]
     public static void ShowWindow() {

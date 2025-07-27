@@ -1,8 +1,9 @@
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
+namespace AIEditorWindowTool.Windows {
 
-namespace AIEditorWindowTool.Core {
+  using System.Collections.Generic;
+  using UnityEditor;
+  using UnityEngine;
+
   public class TexturesZip : AIEditorWindow {
     class TextureGroup {
       public string GroupName;

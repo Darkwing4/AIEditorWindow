@@ -1,11 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using UnityEditor;
-using UnityEngine;
+namespace AIEditorWindowTool.Windows {
 
-namespace AIEditorWindowTool.Core {
+  using System;
+  using System.Collections.Generic;
+  using System.IO;
+  using System.Linq;
+  using UnityEditor;
+  using UnityEngine;
+
   public class FindBigSizeFiles : AIEditorWindow {
     float sizeThresholdMB = 100f;
     Vector2 scroll;
