@@ -14,7 +14,7 @@ Create an `AIEditorWindowCreator` window that streamlines the generation and man
      * Inserts the template:  
 
        ```csharp
-       namespace AITools.AIEditorWindowTool {
+       namespace AIEditorWindowTool.Windows {
          using UnityEditor;
          using UnityEngine;
          public class %FILE_NAME% : AIEditorWindow {
