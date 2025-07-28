@@ -1,3 +1,6 @@
+## License
+AIEditorWindow is released under the MIT [LICENSE](LICENSE).
+
 # AIEditorWindow
 
 **LLM‑powered Unity Editor extension** – create, refactor and version EditorWindows with GPT‑4o, Claude 3 and any other
