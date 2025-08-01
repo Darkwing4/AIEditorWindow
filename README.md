@@ -66,7 +66,8 @@ Spoiler: _yes, we can_.
    From Unity’s menu choose GPTGenerated ▸ BookmarkableHistory.
    In the built-in GPT panel: paste the prompt, pick your provider/model, and (optionally) drag extra context scripts.
 
-   ![BookmarkableHistory](docs/.BookmarkableHistory.png)
+   <img width="985" height="701" alt="image" src="https://github.com/user-attachments/assets/a9765b8a-638b-42bc-962d-055fcc7402ca" />
+
 
 3. Click `Write code` → the LLM returns a full IMGUI implementation, Unity recompile automatically, and the window refreshes with real functionality.
 
@@ -77,11 +78,11 @@ Spoiler: _yes, we can_.
 ## More examples
    - FilesToContext ([prompt](https://github.com/Darkwing4/AIEditorWindow/blob/main/Editor/Windows/Generated/FilesToContext.cs.prompt), [generate code](https://github.com/Darkwing4/AIEditorWindow/blob/main/Editor/Windows/Generated/FilesToContext.cs)) which used ContextScriptsToolbar from built-in [Extensions](https://github.com/Darkwing4/AIEditorWindow/tree/main/Editor/Extensions)
 
-     ![FilesToContext](docs/.FilesToContext.png)
+     <img width="821" height="409" alt="image" src="https://github.com/user-attachments/assets/79c9ff7e-e053-4005-b15a-f39ddf2ee207" />
 
    - Textures2DAnalise ([prompt](https://github.com/Darkwing4/AIEditorWindow/blob/main/Editor/Windows/Generated/Texture2DAnalizer.cs.prompt))
 
-     ![Textures2DAnalise](docs/.Textures2DAnalise.png)
+     <img width="1030" height="557" alt="image" src="https://github.com/user-attachments/assets/c24be098-8f92-443e-994d-4345070978f3" />
    
   
  - More in [Generated](https://github.com/Darkwing4/AIEditorWindow/tree/main/Editor/Windows/Generated) section
